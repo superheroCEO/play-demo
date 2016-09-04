@@ -11,3 +11,10 @@ libraryDependencies ++= Seq(
   cache,
   javaWs
 )
+//Ply provides two styles of routers, one expects its actions to be injected, the other, legacy style, access its actions statically.
+routesGenerator := InjectedRoutesGenerator
+
+enablePlugins(DebianPlugin)
+maintainer := "JA <ja@bringbackfit.com>"
+packageSummary := "My custom package"
+packageDescription := "Package"
